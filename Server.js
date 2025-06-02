@@ -7,6 +7,7 @@ class Server {
   constructor() {
     this.app = express();
     this.port = process.env.WEBPORT;
+    this.WEBHOST=process.env.HOST;
     this.db = db;
     this.middlewares();
     this.routes();
@@ -37,9 +38,9 @@ class Server {
       res.send("pong");
     });
   }
-  listen() {
-    this.app.listen(this.port, () => {
-      console.log(`Server running on port http://localhost:${this.port}`);
+   listen() {
+    this.app.listen(this.port,this.WEBHOST, () => {
+      console.log(`Server running on port http://${this.WEBHOST}:${this.port}`);
     });
   }
 }
