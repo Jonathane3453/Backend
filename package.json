@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Para crear el modulo para la consulta de datos, necesitamos hacer un BackEnd para poder usar la base de datos\r En este caso lo creamos en una carpeta aparte para poder usarlo en futuros proyectos y hacerlo escalable\r Para iniciar primero debemos iniciar el proyecto",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonathane3453/Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonathane3453/Backend/issues"
+  },
+  "homepage": "https://github.com/Jonathane3453/Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3"
+  }
+}
